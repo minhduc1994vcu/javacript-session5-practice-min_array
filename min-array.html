@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let length = parseInt(prompt('nhap do dai cua mang'));
+    let array = [];
+    for (let i = 0; i < length; i++) {
+        array[i] = parseInt(prompt('nhap phan tu cua mang'));
+    }
+
+    function min_array(arr) {
+        let min = arr[0];
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] < min) {
+                min = arr[j];
+            }
+        }
+        return min;
+    }
+
+    let rs = min_array(array);
+    alert(rs);
+</script>
+</body>
+</html>
